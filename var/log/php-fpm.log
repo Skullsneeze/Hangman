@@ -1,0 +1,32 @@
+[30-Apr-2018 21:03:25] NOTICE: [pool www] 'user' directive is ignored when FPM is not running as root
+[30-Apr-2018 21:03:25] NOTICE: [pool www] 'group' directive is ignored when FPM is not running as root
+[30-Apr-2018 21:03:25] NOTICE: fpm is running, pid 1
+[30-Apr-2018 21:03:25] NOTICE: ready to handle connections
+[30-Apr-2018 21:06:42] NOTICE: [pool www] 'user' directive is ignored when FPM is not running as root
+[30-Apr-2018 21:06:42] NOTICE: [pool www] 'group' directive is ignored when FPM is not running as root
+[30-Apr-2018 21:06:42] NOTICE: fpm is running, pid 1
+[30-Apr-2018 21:06:42] NOTICE: ready to handle connections
+[30-Apr-2018 21:08:46] NOTICE: Terminating ...
+[30-Apr-2018 21:08:46] NOTICE: exiting, bye-bye!
+[30-Apr-2018 21:08:54] NOTICE: [pool www] 'user' directive is ignored when FPM is not running as root
+[30-Apr-2018 21:08:54] NOTICE: [pool www] 'group' directive is ignored when FPM is not running as root
+[30-Apr-2018 21:08:54] NOTICE: fpm is running, pid 1
+[30-Apr-2018 21:08:54] NOTICE: ready to handle connections
+[30-Apr-2018 21:09:04] NOTICE: [pool www] 'user' directive is ignored when FPM is not running as root
+[30-Apr-2018 21:09:04] NOTICE: [pool www] 'group' directive is ignored when FPM is not running as root
+[30-Apr-2018 21:09:04] NOTICE: fpm is running, pid 1
+[30-Apr-2018 21:09:04] NOTICE: ready to handle connections
+[30-Apr-2018 21:13:48] NOTICE: [pool www] 'user' directive is ignored when FPM is not running as root
+[30-Apr-2018 21:13:48] NOTICE: [pool www] 'group' directive is ignored when FPM is not running as root
+[30-Apr-2018 21:13:48] NOTICE: fpm is running, pid 1
+[30-Apr-2018 21:13:48] NOTICE: ready to handle connections
+[30-Apr-2018 21:21:14] NOTICE: Terminating ...
+[30-Apr-2018 21:21:14] NOTICE: exiting, bye-bye!
+[30-Apr-2018 21:27:08] NOTICE: [pool www] 'user' directive is ignored when FPM is not running as root
+[30-Apr-2018 21:27:08] NOTICE: [pool www] 'group' directive is ignored when FPM is not running as root
+[30-Apr-2018 21:27:08] NOTICE: fpm is running, pid 1
+[30-Apr-2018 21:27:08] NOTICE: ready to handle connections
+[01-May-2018 16:53:50] NOTICE: [pool www] 'user' directive is ignored when FPM is not running as root
+[01-May-2018 16:53:50] NOTICE: [pool www] 'group' directive is ignored when FPM is not running as root
+[01-May-2018 16:53:50] NOTICE: fpm is running, pid 1
+[01-May-2018 16:53:50] NOTICE: ready to handle connections

@@ -1,0 +1,21 @@
+version: '2'
+services:
+  php:
+    user: ${USER}
+    container_name: php
+    volumes:
+      - ../../:/var/www/html
+      - ./conf/xdebug.ini:/usr/local/etc/php/conf.d/xdebug.ini
+      - ./conf/sendmail.ini:/usr/local/etc/php/conf.d/sendmail.ini
+      - ./conf/upload-settings.ini:/usr/local/etc/php/conf.d/upload-settings.ini
+      - ./conf/opcache-settings.ini:/usr/local/etc/php/conf.d/opcache-settings.ini
+      - ./conf/php.ini:/usr/local/etc/php/conf.d/php.ini
+      - ./conf/default.conf:/usr/local/etc/php-fpm.d/zzz-default.conf
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        user: ${USER}
+    environment:
+      XDEBUG_CONFIG: "remote_host=${YOUR_IP_ADDRESS}"
+      PHP_IDE_CONFIG: "serverName=localhost"

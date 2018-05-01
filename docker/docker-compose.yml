@@ -1,0 +1,23 @@
+version: '2'
+services:
+  db:
+    extends:
+      file: mysql/base.yml
+      service: db
+  mailhog:
+    extends:
+      file: mailhog/base.yml
+      service: mailhog
+  php:
+    extends:
+      file: php7/base.yml
+      service: php
+  web:
+    extends:
+      file: nginx/base.yml
+      service: web
+  redis:
+    extends:
+      file: redis/base.yml
+      service: redis
+

@@ -1,0 +1,26 @@
+# Editor
+/.zfproject.xml
+/.buildpath
+/.cache
+/.metadata
+/.project
+/.settings/
+/nbproject/
+/.idea/
+/.csscomb.json
+/.phpstorm.meta.php
+
+# Local dev files
+/*.sql
+/*.tgz
+/*.gz
+/*.zip
+
+# Docker
+/.env
+/*/*_storage
+
+# OS files
+__MACOSX/
+[Tt]humbs.db
+*.DS_Store

@@ -1,0 +1,10 @@
+version: '2'
+services:
+  mailhog:
+    container_name: ${COMPOSE_PROJECT_NAME}_mailhog
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 1025:1025
+      - 8025:8025

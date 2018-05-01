@@ -1,0 +1,60 @@
+[client]
+default-character-set = utf8
+
+[mysqld]
+general_log_file = /var/lib/mysql/general.log
+slow_query_log_file = /var/lib/mysql/slow.log
+
+wait_timeout = 3600
+performance_schema = OFF
+
+key_buffer_size = 64M
+max_allowed_packet = 64M
+thread_stack = 512K
+thread_cache_size = 150
+query_cache_type = 1
+query_cache_limit = 3M
+query_cache_size = 64M
+sort_buffer_size = 8M
+read_buffer_size = 8M
+read_rnd_buffer_size = 8M
+join_buffer_size = 8M
+tmp_table_size = 64M
+max_connect_errors = 500
+connect_timeout = 30
+
+innodb_lock_wait_timeout = 240
+innodb_buffer_pool_size = 256M
+innodb_doublewrite = 0
+innodb_read_io_threads = 1
+innodb_write_io_threads = 1
+innodb_log_file_size = 1G
+innodb_io_capacity = 2500
+innodb_status_file
+innodb_file_per_table
+innodb_flush_log_at_trx_commit = 1
+innodb_table_locks = 0
+innodb_log_buffer_size = 32M
+innodb_lock_wait_timeout = 60
+innodb_thread_concurrency = 16
+innodb_commit_concurrency = 8
+innodb_flush_method = O_DSYNC
+innodb_support_xa = 0
+
+skip-federated
+skip-blackhole
+skip-archive
+
+init_connect="SET collation_connection = utf8_unicode_ci"
+init_connect="SET NAMES utf8"
+character-set-server=utf8
+collation-server=utf8_unicode_ci
+skip-character-set-client-handshake
+
+[mysqldump]
+quick
+quote-names
+max_allowed_packet = 16M
+
+[mysql]
+default-character-set = utf8
