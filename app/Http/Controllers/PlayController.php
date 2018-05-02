@@ -55,11 +55,11 @@ class PlayController extends Controller
         }
 
         // Check if the game is already won
-        if ($game->status === game::STATUS_WON) {
+        if ($game->status === Game::STATUS_WON) {
             return redirect('/play/' . $game->id)->with('status', 'Looks like you already won this game! Congratulations!');
         }
 
-        if ($game->status === game::STATUS_HANGED) {
+        if ($game->status === Game::STATUS_HANGED) {
             return redirect('/play/' . $game->id)->with('status', 'Looks like this game was already lost! Better luck next time!');
         }
 

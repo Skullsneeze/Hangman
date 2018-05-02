@@ -81,7 +81,7 @@ class GameController extends Controller
         }
 
         // Make sure the user owns the game we're updating
-        if ($game->status !== game::STATUS_ACTIVE) {
+        if ($game->status !== Game::STATUS_ACTIVE) {
             return response()->json(['error' => 'This game has been finished'], 400);
         }
 
