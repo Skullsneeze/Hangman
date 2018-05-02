@@ -151,8 +151,8 @@ Authorization: Bearer YOUR_TOKEN
         "updated_at": "2018-05-02 01:37:50",
         "user": {
             "id": 1,
-            "name": "Martijn",
-            "email": "martiniswink@gmail.com",
+            "name": "YOUR NAME",
+            "email": "code@example.com",
             "created_at": "2018-05-01 17:45:06",
             "updated_at": "2018-05-01 17:45:06"
         }
