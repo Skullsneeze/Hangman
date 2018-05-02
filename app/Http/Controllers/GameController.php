@@ -93,14 +93,7 @@ class GameController extends Controller
         // Make sure the given character is not already guessed
         $guessedLetters = \array_flip($game->getGuessedLetters());
         if (isset($guessedLetters[\strtoupper($char)])) {
-            return response()->json(
-                [
-                    'error' => 'The provided character is already guessed for this game',
-                    'letters' => $guessedLetters,
-                    'char' => $char
-                ],
-                400
-            );
+            return response()->json(['error' => 'The provided character is already guessed for this game'],400);
         }
 
         if ($game->processUpdateRequest($char) === false) {
