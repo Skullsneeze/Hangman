@@ -1,0 +1,112 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Hangman",
+		"_postman_id": "2615c809-c98d-afac-e73c-de0abd3d2606",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "API Login",
+			"request": {
+				"url": "http://hangman.local/api/login",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"email\": \"email@example.com\",\n\"password\": \"PASSWORD\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get game",
+			"request": {
+				"url": "http://hangman.local/api/games/10",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer BEARER_ACCESS_TOKEN_GOES_HERE",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": "Be sure to update Bearer auth token if needed"
+			},
+			"response": []
+		},
+		{
+			"name": "Get games overview",
+			"request": {
+				"url": "http://hangman.local/api/games",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer BEARER_ACCESS_TOKEN_GOES_HERE",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": "Be sure to update Bearer auth token if needed"
+			},
+			"response": []
+		},
+		{
+			"name": "Update game (guess charactrer)",
+			"request": {
+				"url": "http://hangman.local/api/games/1/guess/E",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer BEARER_ACCESS_TOKEN_GOES_HERE",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": "Be sure to update Bearer auth token if needed"
+			},
+			"response": []
+		}
+	]
+}
