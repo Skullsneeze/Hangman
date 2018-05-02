@@ -14,3 +14,10 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/play/{game?}', 'PlayController@index')->name('play');
+Route::get('/play/{game}/guess/{char}', 'PlayController@update')->name('guess');
+Route::get('/load', 'LoadController@index')->name('load');

@@ -16,3 +16,10 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::post('login', 'AuthController@login');
+
+Route::resource('games', 'GameController');
+Route::get('games/{game}', 'GameController@show');
+Route::post('games/new', 'GameController@store');
+Route::post('games/{game}/guess/{char}', 'GameController@update');
